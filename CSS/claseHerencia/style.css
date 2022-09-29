@@ -1,0 +1,10 @@
+html {
+  /* Por defecto el font size es de 16px, en este caso le decimos que queremos el 75% de 16px (12px) */
+  font-size: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  /* con esta declaración heredara el tamaño de fuente de su padre más cercano, en este caso el único que tiene font size y que esta a un nivel más arriba es 'html', así que heredara su tamaño de font size de 12px */
+  font-size: inherit;
+}

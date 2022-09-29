@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+section {
+  /* Min y Max Width casi siempre irán acompañados de un width en porcentaje (%) */
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  height: 850px;
+  background-color: red;
+  margin: 0 auto;
+}

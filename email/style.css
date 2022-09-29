@@ -1,0 +1,47 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  padding: 3rem;
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem 0;
+}
+
+.header__logo,
+.header__info,
+.header__date {
+  width: 30%;
+  text-align: center;
+}
+
+.header__logo img {
+  width: 20rem;
+}
+
+.header__info h2 {
+  color: #e5005a;
+}
+
+.header__date {
+  font-style: italic;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.terms {
+  margin: 1.6rem;
+} */
