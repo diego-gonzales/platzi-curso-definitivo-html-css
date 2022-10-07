@@ -1,0 +1,126 @@
+/* VERSIÓN GRID SIN ÁREAS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.grid-container {
+  width: 100%;
+  min-width: 32rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6rem auto 6rem;
+}
+
+.header,
+.aside,
+.main,
+.footer {
+  background-color: #fff;
+}
+
+.grid-container .header {
+  background-color: rgb(156, 142, 239);
+  padding: 1rem;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+}
+
+.ul .ul_item {
+  padding: 0.5rem 0;
+  margin: 0 0.5rem;
+}
+
+.grid-container .aside {
+  background-color: rgb(196, 227, 43);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.grid-container .aside section {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container .main {
+  background-color: rgb(100, 207, 100);
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container .footer {
+  background-color: #382222ac;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-rows: 6rem auto auto 6rem;
+  }
+
+  .grid-container .main {
+    grid-column: 1 / -1;
+    order: 1;
+  }
+
+  .grid-container .aside {
+    grid-column: 1 / -1;
+    order: 2;
+  }
+
+  .grid-container .aside section {
+    grid-column: 1 / -1;
+  }
+
+  .grid-container .footer {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-rows: 6rem auto auto 6rem;
+  }
+
+  .grid-container .main {
+    grid-column: 1 / -1;
+    order: 1;
+  }
+
+  .grid-container .aside {
+    grid-column: 1 / -1;
+    order: 2;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container .footer {
+    order: 3;
+  }
+}
